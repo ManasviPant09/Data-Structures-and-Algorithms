@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 int findPeakElement(int A[],int n){
     cout<<"The peak element is: ";
     if(n==1){
@@ -19,6 +20,7 @@ int findPeakElement(int A[],int n){
         }
     }
 }
+
 int main(){
     int n;
     cout<<"Enter the number of elements you want in your array: ";
