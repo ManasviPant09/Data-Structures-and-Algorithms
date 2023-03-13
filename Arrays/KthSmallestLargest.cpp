@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void ksmallestelement(int A[],int n,int k){
     int temp;
     for(int i=0;i<n;i++){
@@ -13,6 +14,7 @@ void ksmallestelement(int A[],int n,int k){
     }
     cout<<"The desired element is: "<<A[k-1];
 }
+
 void klargestelement(int A[],int n,int k){
     int temp;
     for(int i=0;i<n;i++){
@@ -26,6 +28,7 @@ void klargestelement(int A[],int n,int k){
     }
     cout<<"The desired element is: "<<A[k-1];
 }
+
 int main(){
     int n;
     cout<<"Enter the number of elements you want in your array: ";
