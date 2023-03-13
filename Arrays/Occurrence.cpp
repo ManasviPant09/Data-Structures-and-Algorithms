@@ -12,10 +12,16 @@ void occurrence(int A[],int n,int k){
             M[A[i]]++;
         }
     }
+    int count = 0;
     for(auto &it:M){
         if(k==it.first){
             cout<<"The frequency for the given element is: "<<it.second<<endl;
+            break;
         }
+        count += 1;
+    }
+    if(count == M.size()){
+        cout<<"The given element does not exist in the array!"<<endl;
     }
 }
 
