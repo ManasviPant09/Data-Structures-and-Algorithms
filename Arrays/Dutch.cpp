@@ -51,4 +51,5 @@ int main(){
         cin>>A[i];
     }
     solution(A,n);
+    return 0;
 }

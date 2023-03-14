@@ -43,4 +43,5 @@ int main(){
     cin>>k;
     ksmallestelement(A,n,k);
     klargestelement(A,n,k);
+    return 0;
 }

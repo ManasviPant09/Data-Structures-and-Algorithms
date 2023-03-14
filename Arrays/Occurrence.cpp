@@ -38,4 +38,5 @@ int main(){
     cout<<"Enter the element whose frequency you need to find: ";
     cin>>k;
     occurrence(A,n,k);
+    return 0;
 }
