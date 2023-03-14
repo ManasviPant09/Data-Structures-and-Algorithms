@@ -1,20 +1,15 @@
 #include<iostream>
 using namespace std;
 
-void ReverseArray(int A[],int n){
-    int start = 0;
-    int end = n-1;
-    while(start<end){
-        int temp = A[start];
-        A[start] = A[end];
-        A[end] = temp;
-        start += 1;
-        end -= 1;
-    }
+void solution(int A[],int n){
+    int a = ((n+1)*(n+2))/2;
+    int sum = 0;
     for(int i=0;i<n;i++){
-        cout<<A[i]<<" ";
+        sum += A[i];
     }
+    cout<<"The mssing number is: "<<a-sum;
 }
+
 int main(){
     int n;
     cout<<"Enter the number of elements in the array: ";
@@ -24,6 +19,6 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>A[i];
     }
-    ReverseArray(A,n);
+    solution(A,n);
     return 0;
 }

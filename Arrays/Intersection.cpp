@@ -29,7 +29,7 @@ void Intersection(int A[],int B[],int n,int m){
 
 int main(){
     int n;
-    cout<<"Enter the number of elements you want in the first array: ";
+    cout<<"Enter the number of elements in the first array: ";
     cin>>n;
     int A[n];
     cout<<"Enter the elements of the first array: "<<endl;
@@ -37,7 +37,7 @@ int main(){
         cin>>A[i];
     }
     int m;
-    cout<<"Enter the number of elements you want in the second array: ";
+    cout<<"Enter the number of elements in the second array: ";
     cin>>m;
     int B[m];
     cout<<"Enter the elements of the second array: "<<endl;

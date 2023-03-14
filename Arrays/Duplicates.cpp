@@ -1,21 +1,23 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-void MinMaxElement(int A[],int n){
-    int max = A[0];
+void findDuplicates(int A[],int n){
+    map<int,int> M;
     for(int i=0;i<n;i++){
-        if(A[i]>max){
-            max = A[i];
+        if(M.find(A[i])==M.end()){
+            M[A[i]] = 1;
+        }
+        else{
+            M[A[i]]++;
         }
     }
-    cout<<"The maximum element is: "<<max<<endl;
-    int min = A[0];
-    for(int i=0;i<n;i++){
-        if(A[i]<min){
-            min = A[i];
+    cout<<"The duplicates are: ";
+    for(auto &it:M){
+        if(it.second>1){
+            cout<<it.first<<" ";
         }
     }
-    cout<<"The minimum element is: "<<min<<endl;
 }
 
 int main(){
@@ -27,6 +29,6 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>A[i];
     }
-    MinMaxElement(A,n);
+    findDuplicates(A,n);
     return 0;
 }

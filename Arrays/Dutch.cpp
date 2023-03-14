@@ -43,7 +43,7 @@ void solution(int A[],int n){
 
 int main(){
     int n;
-    cout<<"Enter the number of elements you want in your array: ";
+    cout<<"Enter the number of elements in the array: ";
     cin>>n;
     int A[n];
     cout<<"Enter the elements of the array consisting only 0s, 1s and 2s: "<<endl;

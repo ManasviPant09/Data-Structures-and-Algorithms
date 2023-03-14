@@ -31,7 +31,7 @@ void klargestelement(int A[],int n,int k){
 
 int main(){
     int n;
-    cout<<"Enter the number of elements you want in your array: ";
+    cout<<"Enter the number of elements in the array: ";
     cin>>n;
     int A[n];
     cout<<"Enter the elemnts of the array: "<<endl;

@@ -23,7 +23,7 @@ int findPeakElement(int A[],int n){
 
 int main(){
     int n;
-    cout<<"Enter the number of elements you want in your array: ";
+    cout<<"Enter the number of elements in the array: ";
     cin>>n;
     cout<<"Enter the elements of the array: "<<endl;
     int A[n];

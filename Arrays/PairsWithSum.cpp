@@ -1,20 +1,16 @@
 #include<iostream>
 using namespace std;
 
-void SortArray(int A[],int n){
-    int temp;
+void solution(int A[],int n,int sum){
+    int count = 0;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(A[j]<A[i]){
-                temp = A[i];
-                A[i] = A[j];
-                A[j] = temp;                
+            if(A[i]+A[j]==sum){
+                count += 1;
             }
         }
     }
-    for(int i=0;i<n;i++){
-        cout<<A[i]<<" ";
-    }
+    cout<<"The total number of pairs that have the deried sum is: "<<count;
 }
 
 int main(){
@@ -26,6 +22,9 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>A[i];
     }
-    SortArray(A,n);
+    int sum;
+    cout<<"Enter the desired sum: ";
+    cin>>sum;
+    solution(A,n,sum);
     return 0;
 }

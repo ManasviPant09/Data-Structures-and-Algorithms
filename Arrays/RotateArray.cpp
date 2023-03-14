@@ -14,7 +14,7 @@ void rotate(int A[],int n){
 
 int main(){
     int n;
-    cout<<"Enter the number of elements you need in the array: ";
+    cout<<"Enter the number of elements in the array: ";
     cin>>n;
     int A[n];
     cout<<"Enter the elements of the array: "<<endl;
